@@ -34,3 +34,5 @@ for j in range(0,n):
         
     #pyplot.plot(my_time, my_temp, color=my_color[j-1], ls='-', lw=3)
 pyplot.plot(dt, temp,'o')
+pyplot.xalbel('dt')
+pyplot.ylabel('Temp.')
