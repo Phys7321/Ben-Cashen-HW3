@@ -6,7 +6,7 @@ Created on Sun Sep 30 15:29:59 2018
 """
 
 import numpy as np
-
+y0 = 1
 g = 9.8            # g acceleration
 mass = 0.01        # mass of the particle          
 v0 = 0.            # initial velocity
@@ -30,7 +30,7 @@ class particle(object):
         
 p = particle(mass, y0, v0)
 
-y0_array = np.linspace(1500000,1600000,1000,endpoint=False)
+y0_array = np.linspace(1,1600000,1000,endpoint=False)
 
 for y0 in y0_array:
     y = [y0]                # since we do not know the size of the arrays, we define first a python list
